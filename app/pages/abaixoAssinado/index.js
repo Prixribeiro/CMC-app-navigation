@@ -2,7 +2,7 @@ import React from "react";
 import { Text, TextInput, View, StyleSheet, TouchableOpacity} from "react-native";
 
 const textoAlerta = () => {
-  alert("Obrigado por participar desta petição online!");
+  alert("Obrigado por participar deste abaixo assinado online!");
   
 }
 
