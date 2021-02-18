@@ -94,7 +94,6 @@ const styles = StyleSheet.create({
     borderWidth: 1,
   },
   btncadastro: {
-    color: 'white',
     backgroundColor: '#FFD700',
     marginTop: 40,
     padding: 10,
