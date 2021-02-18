@@ -10,7 +10,7 @@ export default function Home(props){
                 <Text style={styles.titulo}>Ajude mais de 6 milhões de famílias {"\n"}
                 mapeando locais abandonados</Text>
             
-              <TouchableOpacity style={styles.btncadastro} tittle = "sobre" onPress={()=>navigation.navigate('Sinalizar')}>
+              <TouchableOpacity style={styles.btncadastro} tittle = "sinalizar" onPress={()=>navigation.navigate('Sinalizar')}>
                 <Text style = {styles.btntexto}>Faça sua parte!</Text>
               </TouchableOpacity>
 
