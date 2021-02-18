@@ -4,7 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
-import { StyleSheet} from "react-native";
+import { Image } from "react-native";
 
 import Home from "./app/pages/home";
 import Cadastro from "./app/pages/inputs/cadastro";
@@ -45,8 +45,7 @@ function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Home" component={createHomeNavi} 
-        options={{title: 'Cadê Minha Casa?',headerStyle: {backgroundColor: '#FFD700',},headerTintColor: '#000',headerTitleStyle: {fontWeight: 'bold',},}}/>
+        <Stack.Screen name=" " component={createHomeNavi} />
         <Stack.Screen name="Cadastro" component={Cadastro} />
         <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="Sobre" component={Sobre} /> 

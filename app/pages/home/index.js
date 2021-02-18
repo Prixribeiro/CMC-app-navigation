@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Text, View, TouchableOpacity} from "react-native";
 
+
 export default function Home(props){
   const {navigation} = props;
   return (
