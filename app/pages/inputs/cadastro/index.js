@@ -13,10 +13,7 @@ export default function Login({navigation}) {
     
   }
 
-  const redefinir= () => {
-    alert("Email de redefinição de senha enviado com sucesso!");
-    
-  }
+  
 
   return (
     <KeyboardAvoidingView 

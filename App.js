@@ -13,7 +13,6 @@ import Avanco from "./app/pages/avanco";
 import SuaSinalizacao from "./app/pages/suaSinalizacao";
 import Sobre from "./app/pages/sobre";
 import AbaixoAssinado from "./app/pages/abaixoAssinado";
-import InputSinalizacao from "./app/pages/inputs/sinalizacao";
 import Delete from "./app/pages/inputs/delete";
 import Alterar from "./app/pages/inputs/modificar";
 
@@ -35,7 +34,7 @@ function App() {
       <Tab.Screen name="Abaixo Assinado" component={AbaixoAssinado} 
       options={{tabBarLabel: 'Apoie', tabBarIcon: ({ color, size }) => (<MaterialCommunityIcons name="clipboard-text" color={color} size={size} />),
     }}/>
-      <Tab.Screen name="Sinalizacao" component={SuaSinalizacao} 
+      <Tab.Screen name="Sinalizar" component={SuaSinalizacao} 
       options={{tabBarLabel: 'Sinalize', tabBarIcon: ({ color, size }) => (<MaterialCommunityIcons name="alert" color={color} size={size} />),
     }}/>
       
@@ -51,7 +50,6 @@ function App() {
         <Stack.Screen name="Sobre" component={Sobre} /> 
         <Stack.Screen name="Abaixo Assinado" component={AbaixoAssinado} /> 
         <Stack.Screen name="Avancos" component={Avanco} /> 
-        <Stack.Screen name="Sinalizar" component={InputSinalizacao} /> 
         <Stack.Screen name="Deletar" component={Delete} />
         <Stack.Screen name="Alterar" component={Alterar} />
       </Stack.Navigator>

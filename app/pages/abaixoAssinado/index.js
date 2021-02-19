@@ -11,10 +11,10 @@ export default function AbaixoAssinado ({ navigation }) {
     <View style={styles.container}>
 
       
-      <Text style={styles.titulo1} >Ajude esse local:</Text>
-      <Text style={styles.titulo2} >Bairro:</Text>
-      <Text style={styles.titulo2} >Logradouro:</Text>
-      <Text style={styles.titulo2} >Número</Text>
+      <Text style={styles.titulo1} >Precisamos da sua ajuda!</Text>
+      <Text style={styles.titulo2} >Ajude a transformar lugares abandonados em moradias para pessoas em situacão de vulnerabilidade social. {"\n"}
+      Assine nosso Abaixo assinado online.</Text>
+    
 
       <TextInput style={styles.input}
       placeholder="Seu nome"
@@ -37,9 +37,9 @@ export default function AbaixoAssinado ({ navigation }) {
 
 
       <View style={styles.containerblack}>
-           <Text style={styles.tituloContainer} >Como você ajuda?</Text>
+           <Text style={styles.tituloContainer} >Apoie esta causa!</Text>
            <Text style={styles.textContainer} >Com essa ação você ajuda {"\n"}
-            essa sinalização a ganhar mais força. {"\n"}
+            essa sinalização a ganhar mais visibilidade. {"\n"}
             Com isso temos mais força para pressionar {"\n"}
             as Prefeituras para que algo {"\n"}
             seja feito nesse imóvel.
@@ -82,9 +82,8 @@ const styles = StyleSheet.create({
   titulo2: {
     marginTop: 10,
     fontWeight: 'bold',
-    textAlign: 'left',
-    fontWeight: 'bold',
-    justifyContent: 'flex-start',
+    textAlign: 'center',
+    justifyContent: 'center',
     width: 350
   },
 
