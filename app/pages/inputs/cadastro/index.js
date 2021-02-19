@@ -9,7 +9,7 @@ export default function Login({navigation}) {
   const [ConfSenha, setConfSenha] = useState ('');
   
   const logar = () => {
-    alert("usuário logado!");
+    alert("Obrigado por se cadastrar no \n Cadê Minha Casa? \n Faça seu Login!");
     
   }
 

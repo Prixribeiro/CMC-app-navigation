@@ -1,6 +1,5 @@
 import React from "react";
 import { StyleSheet, Text, View, Image} from 'react-native';
-import Team from '../../../assets/time.jpeg';
 
 // import { Container } from './styles';
 
@@ -26,7 +25,7 @@ export default function Sobre({ navigation }) {
       <Text style={styles.linha} >___________________________________</Text>
       <Text style={styles.titulo1} >Quem somos?</Text>
 
-      <Image source={require('../../../assets/time.jpeg')} style={styles.img}/> 
+      <Image source={require('../../../assets/time.png')} style={styles.img}/> 
       
 
     </View>
@@ -73,7 +72,7 @@ const styles = StyleSheet.create({
 
   img: {
     marginTop: 20,
-    width: 400,
+    width: 420,
     height: 100
   }
 
