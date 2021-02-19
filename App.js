@@ -15,6 +15,7 @@ import Sobre from "./app/pages/sobre";
 import AbaixoAssinado from "./app/pages/abaixoAssinado";
 import Delete from "./app/pages/inputs/delete";
 import Alterar from "./app/pages/inputs/modificar";
+import Logado from "./app/pages/UserLogado";
 
 const Tab = createBottomTabNavigator();
 const Stack  = createStackNavigator();
@@ -52,6 +53,8 @@ function App() {
         <Stack.Screen name="Avancos" component={Avanco} /> 
         <Stack.Screen name="Deletar" component={Delete} />
         <Stack.Screen name="Alterar" component={Alterar} />
+        <Stack.Screen name="Logado" component={Logado} 
+        options={{title: 'Bem vindo!'}}/>
       </Stack.Navigator>
     </NavigationContainer>
   );

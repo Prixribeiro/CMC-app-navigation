@@ -1,33 +1,31 @@
 import React, { Component } from "react";
 import { StyleSheet, Image, SafeAreaView, Text, TouchableOpacity, View, ScrollView} from 'react-native';
+import Lista from './lista';
 
-const alerta = () => {
-  alert("Imóvel excluido com sucesso!");
-  
-}
+// import { Container } from './styles';
 
-function Delete({ navigation }) {
+function Logado({ navigation }) {
   return (
     <SafeAreaView style={styles.container}>
       
             <View >
-                <Text style={styles.titulo}>Você tem certeza que quer excluir os dados do imóvel cadastrado?</Text>
+                <Text style={styles.titulo}>Aqui você pode ver o {"\n"}progresso das sua sinalizações</Text>
 
                 <Text style={styles.textoBottom}>____________________________________________</Text>
                 <TouchableOpacity
                     style={styles.btncadastro}
-                    tittle = "deletar" onPress={()=>alerta()}
+                    tittle = "Alterar" onPress={(()=>navigation.navigate('Alterar'))}
                 >
-                    <Text style={styles.btntexto}>Sim</Text>
+                    <Text style={styles.btntexto}>Alterar</Text>
                 </TouchableOpacity>
 
                 <TouchableOpacity
                     style={styles.btncancelar}
-                    tittle = "cancelar" onPress={(()=>navigation.navigate('Logado'))}
+                    tittle = "Cancelar" onPress={(()=>navigation.navigate('Deletar'))}
                 >
-                    <Text style={styles.btntexto}>Não</Text>
+                    <Text style={styles.btntexto}>Deletar</Text>
                 </TouchableOpacity>
-                
+                <Lista />
                 
         </View>
         
@@ -97,4 +95,4 @@ const styles = StyleSheet.create({
   });
 
 
-export default Delete;
+export default Logado;

@@ -1,14 +1,186 @@
-import React, { Component } from "react";
-import { Button, Text, View } from "react-native";
+import { StatusBar } from 'expo-status-bar';
+import React, {useState} from "react";
+import { Text, TextInput, View, StyleSheet, TouchableOpacity, ScrollView} from "react-native";
+
+
+const msgEnvio= () => {
+  alert("Dados alterados com sucesso!");
+  
+}
 
 const Modificar = ({navigation}) => {
   
   return (
-    <View>
-      <Text>Modificar</Text>
+  
+  <View style={styles.container}>
+    <StatusBar hidden />
+    <ScrollView>
+          <Text style={styles.titulo1}>
+            Coloque os dados que você deseja modificar</Text>
+      
+      <View style={styles.container}>
+      <TextInput 
+            style={styles.input}
+            placeholder="CEP" onChangeText = {text => setCep(text)}/>
 
+          <TextInput 
+            style={styles.input}
+            placeholder="Estado" onChangeText = {text => setEstado(text)}/>
+          
+          <TextInput 
+            style={styles.input}
+            placeholder="Cidade" onChangeText = {text => setCidade(text)}/>
+
+          <TextInput 
+            style={styles.input}
+            placeholder="Bairro" onChangeText = {text => setBairro(text)}/>
+
+          <TextInput 
+            style={styles.input}
+            placeholder="Endereço" onChangeText = {text => setEndereco(text)}/>
+
+          <TextInput 
+            style={styles.input}
+            placeholder="Número" onChangeText = {text => setNumero(text)}/>
+
+
+          <Text style={styles.titulo2}> Observações:</Text>
+          <TextInput style={styles.inputMsg}placeholder='Caso tenha informações adicionais do local, descreva aqui.' onChangeText = {text => setMsg(text)}/>
+          
+          <TouchableOpacity
+                    style={styles.btncadastro}
+                    tittle = "Confirmar" onPress={()=> msgEnvio()}
+                >
+                    <Text style={styles.btntexto}>Confirmar</Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity
+                    style={styles.btncancelar}
+                    tittle = "Cancelar" onPress={(()=>navigation.navigate('Logado'))}>
+                    <Text style={styles.btntexto}>Cancelar</Text>
+          </TouchableOpacity>
+
+
+      </View>
+      </ScrollView>
     </View>
+   
   );
-}
+};
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#FFFFFF',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  titulo1: {
+    fontSize: 22,
+    padding:0,
+    marginTop: 10,
+    textAlign: 'center',
+    fontWeight: 'bold',
+    
+  },
+
+  input: {
+    marginTop: 15,
+    padding: 10,
+    width: 380,
+    backgroundColor: '#fff',
+    fontSize: 15,
+    borderRadius: 50,
+    borderColor: '#D3D3D3', 
+    borderWidth: 1,
+  },
+
+  containerblack: {
+    flex: 1,
+    backgroundColor:'#000000',
+    marginTop: 0,
+    width:414,
+    height: 200,
+    justifyContent: 'center',
+  },
+
+  tituloContainer: {
+    color: 'white',
+    textAlign: 'center',
+    fontSize: 26,
+    fontWeight: '500',
+    marginVertical: 20
+    
+  },
+  detalhe: {
+    color: '#FFD700',
+    fontWeight: 'bold'
+  },
+
+  textContainer: {
+    color: 'white',
+    textAlign: 'center',
+    fontSize: 18,
+    marginVertical: 20
+    
+  },
+
+  button: {
+      backgroundColor: '#FFD700',
+      width: 380,
+      height: 40,
+      alignItems: 'center',
+      justifyContent: 'center',
+      borderRadius: 50,
+      marginTop: 20
+  },
+  titulo2: {
+    marginTop: 20,
+    fontWeight: '400',
+    textAlign: 'left',
+    justifyContent: 'flex-start',
+    width: 380
+  },
+  inputMsg: {
+    marginTop: 10,
+    padding: 10,
+    width: 380,
+    height: 100,
+    backgroundColor: '#fff',
+    fontSize: 15,
+    borderRadius: 10,
+    borderColor: '#D3D3D3', 
+    borderWidth: 1,
+    fontSize: 13
+  },
+  btncadastro: {
+    backgroundColor: '#FFD700',
+    marginTop: 20,
+    padding: 10,
+    borderRadius: 50,
+    width: 200,
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: 40
+  },
+  btntexto: {
+    fontWeight: '500',
+    fontSize: 18
+  },
+  btncancelar: {
+    backgroundColor: '#FFF',
+    marginTop: 10,
+    padding: 10,
+    borderRadius: 50,
+    width: 200,
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: 40,
+    borderColor: '#FF0000', 
+    borderWidth: 1,
+  },
+  
+
+});
 
 export default Modificar;
