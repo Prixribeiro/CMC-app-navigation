@@ -47,8 +47,10 @@ function App() {
       <Stack.Navigator>
         <Stack.Screen name=" " component={createHomeNavi} />
         <Stack.Screen name="Cadastro" component={Cadastro} />
+        <Stack.Screen name= "SuaSinalizacao" component={SuaSinalizacao} />
         <Stack.Screen name="Login" component={Login} />
-        <Stack.Screen name="Sobre" component={Sobre} /> 
+        <Stack.Screen name="Sobre" component={Sobre} 
+        options={{title: 'Cadê minha casa?'}}/> 
         <Stack.Screen name="Abaixo Assinado" component={AbaixoAssinado} /> 
         <Stack.Screen name="Avancos" component={Avanco} /> 
         <Stack.Screen name="Deletar" component={Delete} />

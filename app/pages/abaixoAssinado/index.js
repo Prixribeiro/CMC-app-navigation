@@ -12,7 +12,7 @@ export default function AbaixoAssinado ({ navigation }) {
 
       
       <Text style={styles.titulo1} >Precisamos da sua ajuda!</Text>
-      <Text style={styles.titulo2} >Ajude a transformar lugares abandonados em moradias para pessoas em situacão de vulnerabilidade social. {"\n"}
+      <Text style={styles.titulo2} >Ajude a transformar lugares abandonados em moradias para pessoas em situacão {"\n"}de vulnerabilidade social. {"\n"}
       Assine nosso Abaixo assinado online.</Text>
     
 
@@ -81,7 +81,7 @@ const styles = StyleSheet.create({
 
   titulo2: {
     marginTop: 10,
-    fontWeight: 'bold',
+    fontWeight: '300',
     textAlign: 'center',
     justifyContent: 'center',
     width: 350

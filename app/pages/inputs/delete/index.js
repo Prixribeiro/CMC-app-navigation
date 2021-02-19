@@ -11,7 +11,7 @@ function Delete({ navigation }) {
     <SafeAreaView style={styles.container}>
       
             <View >
-                <Text style={styles.titulo}>Você tem certeza que quer excluir os dados do imóvel cadastrado?</Text>
+                <Text style={styles.titulo}>Você tem certeza que quer excluir {"\n"} as informações sobre o {"\n"}local cadastrado?</Text>
 
                 <Text style={styles.textoBottom}>____________________________________________</Text>
                 <TouchableOpacity
